@@ -10,7 +10,14 @@ provided. Instead, a run_game binary is used to launch a python module. The
 command line program expects two parameters, the working directory and the 
 module to be loaded. Any additional parameters are passed to the program.
 
-# Porting pygame projects
+## Contents
+- Porting Pygame Projects
+- Example Script
+- Built in Games
+- Building from Source
+
+
+# Porting Pygame Projects
 
 Porting pygame projects can be tricky. The following suggestions should be 
 adhered to:
@@ -28,6 +35,8 @@ keyboard emulation.
 
 3. For best performance, use the new GPU rendering features provided by 
 pygame.sdl2.video.
+
+# Example script
 
 Here is an example script that will launch Cooties using the gamecontroller API.
 
@@ -60,7 +69,7 @@ $ESUDO systemctl restart oga_events &
 printf "\033c" >> /dev/tty1
 ```
 
-# Built in games:
+# Built in Games:
 - [Aeroblaster](https://dafluffypotato.itch.io/aeroblaster), by DaFluffyPotato
 - [Cooties](https://mcpalmer1980.itch.io/cooties), by mcpalmer1980 
 - [Flyboy](https://mcpalmer1980.itch.io/flyboy), by mcpalmer1980
@@ -72,7 +81,7 @@ https://dafluffypotato.itch.io/spike-dungeon), by DaFluffyPotato
 - [Star Pusher](http://inventwithpython.com/pygame/), by by Al Sweigart
 - [Which Way is Up?](https://www.pygame.org/project/410), by Olli Etuaho
 
-# Building
+# Building from Source
 run_pygame should be build using an aarch64 chroot, such as that provided by 
 Christian Haitian's [virtualbox 
 image](https://drive.google.com/file/d/1_6SLtNurqeUafKrbBM2Ba0fTWyZkGAGi/view).
@@ -109,4 +118,3 @@ git clone https://github.com/mcpalmer1980/pygame_run.git
 cd pygame_run
 pyinstaller pygame_run.spec
 ```
-
