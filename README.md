@@ -118,3 +118,8 @@ git clone https://github.com/mcpalmer1980/pygame_run.git
 cd pygame_run
 pyinstaller pygame_run.spec
 ```
+
+Pyinstaller will generate its binary in a dist subfolder and add many other 
+dependencies to it. It might not collect all of the necessary files, however. 
+You may need to add the missing files to the pygame and numpy folders that 
+pyinstaller generates.
