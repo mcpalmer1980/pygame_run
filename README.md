@@ -108,7 +108,5 @@ pip3 install numpy
 git clone https://github.com/mcpalmer1980/pygame_run.git
 cd pygame_run
 pyinstaller pygame_run.spec
-
-pygame/build
 ```
 
