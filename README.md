@@ -122,4 +122,7 @@ pyinstaller pygame_run.spec
 Pyinstaller will generate its binary in a dist subfolder and add many other 
 dependencies to it. It might not collect all of the necessary files, however. 
 You may need to add the missing files to the pygame and numpy folders that 
-pyinstaller generates.
+pyinstaller generates. Generally I find that you must copy the pygame and 
+pymunk folder from the build machine. Also, you might need to copy libxcb.so.1.
+Finally, the libsdl2.x.so file should be removed so that the system library is 
+used instead.
